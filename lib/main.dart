@@ -6,12 +6,20 @@ void main() {
       appBar: AppBar(
         title: Text('My first app'),
         centerTitle: true,
+        backgroundColor: Colors.deepPurple,
       ),
-      body: Center(
-        child:Text('Welcome to my new application'),
+      body:  Center(
+        child:Text(
+            'Welcome to my new application',
+             style: TextStyle(
+               fontSize: 20.0,
+               fontWeight: FontWeight.bold,
+               fontFamily: 'IndieFlower',
+        ),),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: null,
-      child: Text('Click'),)
+      floatingActionButton: FloatingActionButton(onPressed: (){},
+      child: Text('Click'),
+      backgroundColor: Colors.deepPurple,)
     ),
   ));
 }
