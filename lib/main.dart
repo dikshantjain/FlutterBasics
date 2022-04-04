@@ -19,16 +19,12 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
         ),
         body:  Center(
-          child:Text(
-            'Welcome to my new application',
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'IndieFlower',
-            ),),
+          child:Image(
+            image: NetworkImage('https://images.unsplash.com/photo-1633706152507-c2afee8495da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
+          ),
         ),
         floatingActionButton: FloatingActionButton(onPressed: (){},
-          child: Text('Click me'),
+          child: Text('Click'),
           backgroundColor: Colors.deepPurple,)
     );
   }
