@@ -19,11 +19,15 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
         ),
         body:  Center(
-          child:Icon(
-            Icons.airport_shuttle,
-            color: Colors.lightBlue,
-            size: 50.0,
-          ),
+          child:IconButton(
+            onPressed: (){
+              print("Mail me");
+            },
+            icon: Icon(
+              Icons.alternate_email,
+            ),
+            color: Colors.amberAccent,
+          )
         ),
         floatingActionButton: FloatingActionButton(onPressed: (){},
           child: Text('Click'),
